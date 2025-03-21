@@ -7,10 +7,10 @@ Online Eyewear Shop Website - 1.0
 https://www.sourcecodester.com/php/16089/online-eyewear-shop-website-using-php-and-mysql-free-download.html
 
 ## Vulnerability File:
-/oews/classes/Users.php?f=registration
+/oews/classes/Users.php?f=delete
 
 ## Description:
-The online eyewear store website 1.0 has a SQL injection attack in the id parameter in the route /oews/classes/Users.php?f=registration. Attackers can exploit this vulnerability to directly obtain sensitive information from the server.
+The online eyewear store website 1.0 has a SQL injection attack in the id parameter in the route /oews/classes/Users.php?f=delete. Attackers can exploit this vulnerability to directly obtain sensitive information from the server.
 
 Status: CRITICAL
 
@@ -41,9 +41,11 @@ id=1 and updatexml(1,concat(0x7e,(database())),3)-- q
 
 Get the database name directly through the error report: oews_db
 
-![CleanShot 2025-03-18 at 13 30 53@2x](https://github.com/user-attachments/assets/581f0a52-a3b1-4b3a-9101-c0004c591db2)
+![CleanShot 2025-03-21 at 16 43 28@2x](https://github.com/user-attachments/assets/8b34f784-8496-44d7-b9f6-ff5b953b2803)
+
 
 ## Code Analysis
 The id parameter is controllable and directly introduced into the SQL statement, causing a SQL injection vulnerability.
-![CleanShot 2025-03-18 at 13 31 34@2x](https://github.com/user-attachments/assets/80d82932-c85a-4a25-9922-28ad09f7f866)
+![CleanShot 2025-03-21 at 16 43 51@2x](https://github.com/user-attachments/assets/0fac71fe-9583-4967-9740-8ac0853d5c7a)
+
 
